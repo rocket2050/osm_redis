@@ -1,0 +1,5 @@
+[redis-master]
+redis-master.example.com
+
+[redis-slave]
+redis-slave.example.com
