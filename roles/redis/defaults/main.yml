@@ -25,7 +25,8 @@ redis_as_service: true
 # Add local facts to /etc/ansible/facts.d for Redis
 redis_local_facts: true
 # Service name
-redis_service_name: "redis_{{ redis_port }}"
+redis_service_name: redis_6379
+
 
 ## Networking/connection options
 redis_bind: 0.0.0.0

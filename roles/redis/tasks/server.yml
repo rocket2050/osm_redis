@@ -107,7 +107,11 @@
     dest: /etc/redis/{{ redis_port }}.conf
     owner: "{{ redis_user }}"
     mode: 0640
-  notify: "restart redis {{ redis_port }}"
+#- name: Starting redis as serverive
+#  service: 
+#    name: redis_6379 
+#    state: restarted
+#  notify: "restart redis {{ redis_port }}"
 
 - name: add redis init config file
   template:
